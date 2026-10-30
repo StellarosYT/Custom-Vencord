@@ -28,6 +28,7 @@ const makePatch: (showIcon: boolean) => NavContextMenuPatchCallback = showIcon =
 
 export default definePlugin({
     name: "ServerInfo",
+    enabledByDefault: true,
     description: "Allows you to view info about a server",
     tags: ["Servers", "Utility"],
     authors: [Devs.Ven, Devs.Nuckyz],

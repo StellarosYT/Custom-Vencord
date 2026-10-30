@@ -231,6 +231,7 @@ const genTagTypes = () => {
 
 const plugin = definePlugin({
     name: "MoreUserTags",
+    enabledByDefault: true,
     description: "Adds tags for webhooks and moderative roles (owner, admin, etc.)",
     authors: [Devs.Cyn, Devs.TheSun, Devs.RyanCaoDev, Devs.LordElias, Devs.AutumnVN, Devs.Stellaros],
     settings,

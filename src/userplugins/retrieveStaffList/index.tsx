@@ -296,6 +296,7 @@ const GuildContext: NavContextMenuPatchCallback = (children, { guild }: { guild?
 
 export default definePlugin({
     name: "RetrieveStaffList",
+    enabledByDefault: true,
     description: "View server staff members, their highest role and elevated permissions.",
     tags: ["Servers", "Roles", "Utility"],
     authors: [Devs.Stellaros],

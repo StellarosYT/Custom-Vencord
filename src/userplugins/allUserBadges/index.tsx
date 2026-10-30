@@ -9,6 +9,7 @@ import definePlugin from "@utils/types";
 
 export default definePlugin({
     name: "AllUserBadges",
+    enabledByDefault: true,
     description: "Expands all badges provided by Discord in user profiles without an overflow indicator.",
     tags: ["Appearance"],
     authors: [Devs.Stellaros],
