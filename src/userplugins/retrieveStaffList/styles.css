@@ -1,0 +1,227 @@
+.vc-retrieve-staff-list-modal {
+    min-height: 520px;
+}
+
+.vc-retrieve-staff-list-description {
+    margin: 0;
+}
+
+.vc-retrieve-staff-list-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.vc-retrieve-staff-list-columns,
+.vc-retrieve-staff-list-row {
+    display: grid;
+    grid-template-columns: minmax(190px, 1.2fr) minmax(150px, 0.9fr) minmax(170px, 1.2fr) auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.vc-retrieve-staff-list-columns {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0 12px 8px;
+    text-transform: uppercase;
+}
+
+.vc-retrieve-staff-list-columns span:last-child {
+    text-align: right;
+}
+
+.vc-retrieve-staff-list-scroller {
+    max-height: 430px;
+    margin-bottom: 16px;
+}
+
+.vc-retrieve-staff-list-row {
+    min-height: 56px;
+    border-radius: 6px;
+    color: var(--text-default);
+    padding: 8px 12px;
+}
+
+.vc-retrieve-staff-list-member {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 12px;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+}
+
+.vc-retrieve-staff-list-member:hover,
+.vc-retrieve-staff-list-member:focus-visible {
+    background: var(--background-modifier-hover);
+    outline: none;
+}
+
+.vc-retrieve-staff-list-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vc-retrieve-staff-list-identity {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.vc-retrieve-staff-list-username,
+.vc-retrieve-staff-list-permission-summary {
+    color: var(--text-muted);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-retrieve-staff-list-display-name {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 6px;
+}
+
+.vc-retrieve-staff-list-display-name strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-retrieve-staff-list-app-badge {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 2px;
+    border-radius: 3px;
+    background: var(--brand-500);
+    color: var(--white-500);
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 0 4px;
+}
+
+.vc-retrieve-staff-list-app-badge.verified {
+    padding-left: 2px;
+}
+
+.vc-retrieve-staff-list-app-badge svg {
+    width: 10px;
+    height: 10px;
+}
+
+.vc-retrieve-staff-list-role-badge {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.vc-retrieve-staff-list-role-badge > span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vc-retrieve-staff-list-role-dot {
+    width: 10px;
+    height: 10px;
+    flex: none;
+    border-radius: 50%;
+    background: currentcolor;
+}
+
+.vc-retrieve-staff-list-role-icon {
+    width: 18px;
+    height: 18px;
+    flex: none;
+    object-fit: contain;
+}
+
+.vc-retrieve-staff-list-role-emoji {
+    flex: none;
+    font-size: 16px;
+}
+
+.vc-retrieve-staff-list-actions {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.vc-retrieve-staff-list-icon-button {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--interactive-normal);
+    cursor: pointer;
+}
+
+.vc-retrieve-staff-list-icon-button:hover {
+    background: var(--background-modifier-active);
+    color: var(--interactive-hover);
+}
+
+.vc-retrieve-staff-list-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.vc-retrieve-staff-list-footer button:last-child {
+    margin-left: auto;
+}
+
+.vc-retrieve-staff-list-permissions-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vc-retrieve-staff-list-permission {
+    padding: 12px;
+    border-radius: 6px;
+    background: var(--background-secondary);
+}
+
+.vc-retrieve-staff-list-permission-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+@media (width <=640px) {
+    .vc-retrieve-staff-list-columns,
+    .vc-retrieve-staff-list-row {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    .vc-retrieve-staff-list-columns span:nth-child(n+2),
+    .vc-retrieve-staff-list-row > .vc-retrieve-staff-list-role-badge,
+    .vc-retrieve-staff-list-permission-summary {
+        display: none;
+    }
+}

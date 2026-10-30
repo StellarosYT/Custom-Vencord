@@ -1,0 +1,55 @@
+.vc-mut-message-tag {
+    margin-top: unset !important;
+    margin-bottom: unset !important;
+    position: relative;
+    bottom: 0.01em;
+    vertical-align: middle !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.vc-mut-message-verified {
+    height: 1rem !important;
+}
+
+[class*="botTagCozy_"][class*="botTag_"] {
+    position: static;
+    vertical-align: middle !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.vc-tag {
+    margin: 0 !important;
+}
+
+.vc-mut-voice-tag {
+    position: absolute !important;
+    z-index: 1;
+    top: 50%;
+    left: -28px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+[class*="voiceUser_"]:has(.vc-mut-voice-tag) {
+    position: relative;
+    overflow: visible !important;
+}
+
+[class*="voiceUser_"]:has(.vc-mut-voice-tag) :has(.vc-mut-voice-tag) {
+    position: static !important;
+    overflow: visible !important;
+}
+
+.vc-mut-voice-icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
