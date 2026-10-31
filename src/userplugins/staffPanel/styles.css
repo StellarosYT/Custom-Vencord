@@ -1,0 +1,122 @@
+.vc-staff-panel-root {
+    display: contents;
+}
+
+.vc-staff-panel-window {
+    position: fixed;
+    z-index: 2147483647;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    background: var(--background-base-lowest);
+    box-shadow: var(--elevation-high);
+    color: var(--text-normal);
+    pointer-events: none;
+    -webkit-app-region: no-drag;
+}
+
+.vc-staff-panel-titlebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 0 8px 0 12px;
+    background: var(--background-base-low);
+    color: var(--text-normal);
+    cursor: move;
+    pointer-events: auto;
+    user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+.vc-staff-panel-titlebar > svg {
+    flex: 0 0 auto;
+    color: var(--brand-500);
+}
+
+.vc-staff-panel-button,
+.vc-staff-panel-button svg {
+    -webkit-app-region: no-drag;
+}
+
+.vc-staff-panel-button svg {
+    color: var(--interactive-icon-default);
+}
+
+.vc-staff-panel-button[class*="selected"] svg {
+    color: var(--interactive-icon-active);
+}
+
+.vc-staff-panel-button:hover svg {
+    color: var(--interactive-icon-hover);
+}
+
+.vc-staff-panel-title {
+    flex: 1;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-staff-panel-control {
+    display: grid;
+    width: 28px;
+    height: 28px;
+    place-items: center;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--interactive-icon-default);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.vc-staff-panel-control:hover {
+    background: var(--background-modifier-hover);
+    color: var(--interactive-icon-hover);
+}
+
+.vc-staff-panel-error {
+    position: absolute;
+    inset: 39px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+    background: var(--background-base-lowest);
+    color: var(--text-normal);
+    text-align: center;
+    pointer-events: auto;
+}
+
+.vc-staff-panel-error span:last-child {
+    color: var(--text-muted);
+    overflow-wrap: anywhere;
+}
+
+.vc-staff-panel-resize {
+    display: grid;
+    flex: 0 0 auto;
+    width: 28px;
+    height: 28px;
+    place-items: center;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--interactive-icon-default);
+    cursor: nwse-resize;
+    pointer-events: auto;
+    -webkit-app-region: no-drag;
+}
+
+.vc-staff-panel-resize:hover {
+    background: var(--background-modifier-hover);
+    color: var(--interactive-icon-hover);
+}
